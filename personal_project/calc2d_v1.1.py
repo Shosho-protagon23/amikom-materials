@@ -2,8 +2,8 @@ from art import *
 import textColor
 import time
 
+# Fungsi untuk menampilkan loading bar sederhana.
 def loading_bar(duration=2):
-    """Fungsi untuk menampilkan loading bar sederhana."""
     for i in range(11):
         print(f"Loading: [{'#' * i}{' ' * (10 - i)}] {i*10}%", end='\r')
         time.sleep(duration / 10)
